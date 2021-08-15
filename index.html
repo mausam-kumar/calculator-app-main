@@ -7,21 +7,50 @@
 	<!-- displays site properly based on user's device -->
 
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+	<link rel="stylesheet" href="./dist/css/style.css">
 	<title>Frontend Mentor | Calculator app</title>
-
-	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
 
 <body>
 
-
-
-	<div class="attribution">
-		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-		Coded by <a href="#">Your Name Here</a>.
+	<div class="mainContainer">
+		<div class="header">
+			<div>
+				calc
+			</div>
+			<div>
+				<span>Theme</span>
+				<!-- <input type="text"> -->
+			</div>
+		</div>
+		<div class="displayRes">
+			
+		</div>
+		<div class="buttonGroup">
+			<div class="smallButton row1 col1" onclick="clickNumKey('7')">7</div>
+			<div class="smallButton row1 col2" onclick="clickNumKey('8')">8</div>
+			<div class="smallButton row1 col3" onclick="clickNumKey('9')">9</div>
+			<div class="smallButton row1 col4" onclick="clickDelKey('DEL')">DEL</div>
+			<div class="smallButton row2 col1" onclick="clickNumKey('4')">4</div>
+			<div class="smallButton row2 col2" onclick="clickNumKey('5')">5</div>
+			<div class="smallButton row2 col3" onclick="clickNumKey('6')">6</div>
+			<div class="smallButton row2 col4" onclick="clickNumKey('+')">+</div>
+			<div class="smallButton row3 col1" onclick="clickNumKey('1')">1</div>
+			<div class="smallButton row3 col2" onclick="clickNumKey('2')">2</div>
+			<div class="smallButton row3 col3" onclick="clickNumKey('3')">3</div>
+			<div class="smallButton row3 col4" onclick="clickNumKey('-')">-</div>
+			<div class="smallButton row4 col1" onclick="clickNumKey('.')">.</div>
+			<div class="smallButton row4 col2" onclick="clickNumKey('0')">0</div>
+			<div class="smallButton row4 col3" onclick="clickNumKey('/')">/</div>
+			<div class="smallButton row4 col4" onclick="clickNumKey('x')">x</div>
+			<div class="largeButton1 row5 col5" onclick="reset()">RESET</div>
+			<div class="largeButton2 row5 col6" onclick="calculateRes()">=</div>
+		</div>
 	</div>
+
+	<script src="./calc.js"></script>
+	
 </body>
 
 </html>

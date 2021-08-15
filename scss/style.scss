@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    margin: 0px auto;
+    width: 100%;
+}
+
+@import './variable';
+
+
+@mixin button($height,$width,$backgroundColor) {
+    height: $height;
+    width: $width;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+    color: $Verydarkgrayishblue;
+    background-color: $backgroundColor;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@import './header';
